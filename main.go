@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	conn, err := redis.Dial("tcp", "localhost:6379")
+	conn, err := redis.Dial("tcp", "redis:6379")
 	if err != nil {
 		log.Fatal(err)
 	}
